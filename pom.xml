@@ -56,10 +56,9 @@
       <profile>
          <id>profile</id>
          <activation>
-            <property>
-               <name>project.parent.artifactId</name>
-               <value>parent</value>
-            </property>
+            <file>
+               <exists>${basedir}/../pom.xml</exists>
+            </file>
          </activation>
          <build>
             <plugins>
